@@ -1,8 +1,41 @@
+<mat-toolbar color="primary"
+             class="my-toolbar example-container"
+             [class.mat-elevation-z2]="!isActive"
+             [class.mat-elevation-z8]="isActive">Know Countries
+</mat-toolbar>
+
+
+<mat-grid-list cols="3" rowHeight="2:2">
+
+    <mat-grid-tile *ngFor='let pais of listaPaises'>
+        <mat-card>
+            <mat-card-header>
+                <img src="{{ pais.flag }}" mat-card-avatar>
+                <span> {{ pais.name }}</span>
+            </mat-card-header>
+            An mat-grid-list must specify a cols attribute which sets the number of columns in the grid. The
+            number of rows will be automatically determined based on the number of columns and the number of items.
+        </mat-card>
+    </mat-grid-tile>
+
+
+</mat-grid-list>
+
+
 <div *ngFor='let pais of listaPaises'>
-    <p>{{ pais.name }}</p>
-    <span *ngFor="let altSpellings of pais.altSpellings">{{ altSpellings }}, </span>
-    <hr>
-    <br>
+    <mat-card>
+
+        <mat-card-title>{{ pais.name }}</mat-card-title>
+
+        <span *ngFor="let altSpellings of pais.altSpellings">{{ altSpellings }}, </span>
+
+    </mat-card>
 </div>
 
-<router-outlet></router-outlet>
+
+<!--<div *ngFor='let pais of listaPaises'>-->
+<!--    <p>{{ pais.name }}</p>-->
+<!--    <span *ngFor="let altSpellings of pais.altSpellings">{{ altSpellings }}, </span>-->
+<!--    <hr>-->
+<!--    <br>-->
+<!--</div>-->

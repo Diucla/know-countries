@@ -1,0 +1,12 @@
+.my-toolbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 998;
+}
+
+.example-container {
+    padding: 16px;
+    margin-bottom: 16px;
+}

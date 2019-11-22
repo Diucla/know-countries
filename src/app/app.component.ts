@@ -10,6 +10,7 @@ import {Pais} from './models/pais.model';
 export class AppComponent implements OnInit {
     title = 'Pesquise por países';
     listaPaises: Pais[];
+    isActive = false;
 
     constructor(private paisesService: PaisesService) {
     }
