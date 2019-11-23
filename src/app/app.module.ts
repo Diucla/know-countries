@@ -5,10 +5,14 @@ import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {HttpClientModule} from '@angular/common/http';
 import {MDBBootstrapModule} from 'angular-bootstrap-md';
+import { CabecalhoComponent } from './cabecalho/cabecalho.component';
+import { PaisesComponent } from './paises/paises.component';
 
 @NgModule({
     declarations: [
         AppComponent,
+        CabecalhoComponent,
+        PaisesComponent,
     ],
     imports: [
         BrowserModule,

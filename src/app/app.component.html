@@ -1,43 +1,12 @@
-<!--<mat-grid-list cols="3">-->
-<!--    <mat-grid-tile *ngFor='let pais of listaPaises'>-->
-<!--        <mat-card class="example-card">-->
-<!--            <mat-card-header>-->
-<!--                <div mat-card-avatar class="example-header-image"></div>-->
-<!--                <mat-card-title> {{pais.translations.pt}} </mat-card-title>-->
-<!--                <mat-card-subtitle>{{pais.region}}</mat-card-subtitle>-->
-<!--            </mat-card-header>-->
-<!--            <img mat-card-image src="{{pais.flag}}" alt="Bandeira de {{pais.translations.pt}}">-->
-<!--            <mat-card-content>-->
-<!--                <p>-->
-<!--                    {{pais.translations.pt}} é um país cuja a sua capital é {{pais.capital}}, conta com uma população-->
-<!--                    de {{pais.population}}, a língua mais falada neste país é {{pais.languages[0].nativeName}}-->
-<!--                </p>-->
-<!--            </mat-card-content>-->
-<!--            <mat-card-actions>-->
-<!--                <button mat-button>LIKE</button>-->
-<!--                <button mat-button>SHARE</button>-->
-<!--            </mat-card-actions>-->
-<!--        </mat-card>-->
-<!--    </mat-grid-tile>-->
-<!--</mat-grid-list>-->
+<app-cabecalho></app-cabecalho>
 
-
-<!--Navbar-->
-<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark indigo">
-
-    <!-- Navbar brand -->
-    <mdb-navbar-brand><a class="navbar-brand" href="#">Conhecendo Países</a></mdb-navbar-brand>
-
-    <!-- Collapsible content -->
-    <links>
-        <!-- Links -->
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link waves-light" mdbWavesEffect>Home<span class="sr-only">(current)</span></a>
-            </li>
-        </ul>
-        <!-- Links -->
-    </links>
-    <!-- Collapsible content -->
-
-</mdb-navbar>
+<!--Main layout-->
+<main class="mt-5 pt-5">
+    <div class="container-fluid">
+        <hr class="my-5">
+        <!--Section: Cards-->
+        <section class="text-center">
+            <app-paises></app-paises>
+        </section>
+    </div>
+</main>
