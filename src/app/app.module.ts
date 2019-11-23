@@ -4,9 +4,7 @@ import {NgModule} from '@angular/core';
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {HttpClientModule} from '@angular/common/http';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MatCardModule, MatToolbarModule} from '@angular/material';
-import {MatGridListModule} from '@angular/material/grid-list';
+import {MDBBootstrapModule} from 'angular-bootstrap-md';
 
 @NgModule({
     declarations: [
@@ -16,10 +14,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
         BrowserModule,
         AppRoutingModule,
         HttpClientModule,
-        BrowserAnimationsModule,
-        MatToolbarModule,
-        MatCardModule,
-        MatGridListModule
+        MDBBootstrapModule.forRoot()
     ],
     providers: [],
     bootstrap: [AppComponent]
