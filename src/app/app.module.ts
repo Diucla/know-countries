@@ -7,7 +7,6 @@ import {HttpClientModule} from '@angular/common/http';
 import {MDBBootstrapModule} from 'angular-bootstrap-md';
 import { CabecalhoComponent } from './cabecalho/cabecalho.component';
 import { PaisesComponent } from './paises/paises.component';
-import { ExportAsModule } from 'ngx-export-as';
 
 @NgModule({
     declarations: [
@@ -20,7 +19,6 @@ import { ExportAsModule } from 'ngx-export-as';
         AppRoutingModule,
         HttpClientModule,
         MDBBootstrapModule.forRoot(),
-        ExportAsModule
     ],
     providers: [],
     bootstrap: [AppComponent]
