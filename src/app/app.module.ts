@@ -9,6 +9,7 @@ import { CabecalhoComponent } from './cabecalho/cabecalho.component';
 import { PaisesComponent } from './paises/paises.component';
 import {Ng2SearchPipeModule} from 'ng2-search-filter';
 import {FormsModule} from '@angular/forms';
+import {AngularPaginatorModule} from 'angular-paginator';
 
 @NgModule({
     declarations: [
@@ -23,6 +24,7 @@ import {FormsModule} from '@angular/forms';
         MDBBootstrapModule.forRoot(),
         Ng2SearchPipeModule,
         FormsModule,
+        AngularPaginatorModule,
     ],
     providers: [],
     bootstrap: [AppComponent]

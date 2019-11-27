@@ -11,6 +11,7 @@ export class PaisesComponent implements OnInit {
   title = 'Pesquise por países';
   listaPaises: Pais[];
   palavraChave = '';
+  currentPage;
   constructor(private paisesService: PaisesService) { }
 
   ngOnInit() {
