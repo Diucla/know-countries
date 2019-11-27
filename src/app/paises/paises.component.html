@@ -1,9 +1,12 @@
+<div class="md-form">
+    <input type="text" id="form6" [(ngModel)]="palavraChave" class="form-control" mdbInput>
+    <label for="form6">Pesquisar</label>
+</div>
+
 <!--Grid row-->
 <div class="row mb-4 wow fadeIn">
-
     <!--Grid column-->
-    <div class="col-md-3 mb-4" *ngFor='let pais of listaPaises'>
-
+    <div class="col-md-3 mb-4" *ngFor='let pais of listaPaises | filter:palavraChave'>
         <!--Card-->
         <div class="card">
 

@@ -10,6 +10,7 @@ import {Pais} from '../models/pais.model';
 export class PaisesComponent implements OnInit {
   title = 'Pesquise por países';
   listaPaises: Pais[];
+  palavraChave = '';
   constructor(private paisesService: PaisesService) { }
 
   ngOnInit() {
