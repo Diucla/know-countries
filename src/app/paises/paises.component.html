@@ -48,29 +48,7 @@
 <nav class="d-flex justify-content-center wow fadeIn">
     <ul class="pagination pg-blue">
 
-        <angular-paginator [boundaryLinks]="false"
-                           [directionLinks]="true"
-                           maxSize="10"
-                           [rotate]="true"
-                           [boundaryLinkNumbers]="false"
-                           [forceEllipses]="false"
-                           size="sm"
-                           id="ANGULAR_PAGINATOR_DEFAULT"
-                           firstText="Primeiro"
-                           previousText="Anterior"
-                           nextText="Próximo"
-                           lastText="Último"
-                           screenReaderFirstText="Primeira"
-                           screenReaderPreviousText="Anterior"
-                           screenReaderNextText="Próximo"
-                           screenReaderLastText="Último"
-                           screenReaderPageText="Página"
-                           screenReaderCurrentPageText="Já estas nesta página"
-                           screenReaderPaginationLabel="Pagination"
-                           className="ANGULAR_PAGINATOR_DEFAULT"
-                           [autoHide]="false"
-                           [disabled]="false"
-                           (pageChange)="currentPage = $event">
-        </angular-paginator>
+        <angular-paginator (pageChange)="currentPage = $event"></angular-paginator>
+
     </ul>
 </nav>
